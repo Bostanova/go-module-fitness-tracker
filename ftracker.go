@@ -84,7 +84,7 @@ func RunningSpentCalories(action int, weight, duration float64) float64 {
     // ваш код здесь
     // ((18 * СредняяСкоростьВКм/ч * 1.79) * ВесСпортсменаВКг / mInKM  * ВремяТренировкиВЧасах * minInH)
     averageSpeed := meanSpeed(action, duration)
-    return ((runningCaloriesMeanSpeedMultiplier * averageSpeed * runningCaloriesMeanSpeedShift) * weight / mInKM * duration * mInKm)
+    return ((runningCaloriesMeanSpeedMultiplier * averageSpeed * runningCaloriesMeanSpeedShift) * weight / mInKm * duration * mInKm)
 }
 
 // Константы для расчета калорий, расходуемых при ходьбе.
